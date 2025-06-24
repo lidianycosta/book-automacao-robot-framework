@@ -1,28 +1,47 @@
-# Automação Web - Desafio Técnico QA
+# Projeto de Testes Automatizados com Robot Framework
 
 ## Descrição
-Automação dos testes na interface web do site [https://www.wcaquino.me/cypress/componentes.html](https://www.wcaquino.me/cypress/componentes.html) utilizando Robot Framework e SeleniumLibrary.
 
-## Objetivos
-- Preenchimento de formulários
-- Seleção de opções (radio buttons, checkboxes, dropdowns)
-- Validação de mensagens e campos
-- Interação com alertas e popups
+Este projeto contém testes automatizados para validar funcionalidades de uma aplicação web que inclui interação com botões, popups, alerts e elementos dinâmicos na página.  
+Os testes são desenvolvidos usando [Robot Framework](https://robotframework.org/) com a biblioteca [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/).
 
-## Estrutura do Projeto
+---
+
+## Pré-requisitos
+
+- Python 3.x instalado  
+- Robot Framework instalado (`pip install robotframework`)  
+- SeleniumLibrary instalada (`pip install robotframework-seleniumlibrary`)  
+- WebDriver para o navegador escolhido (ex: [chromedriver](https://chromedriver.chromium.org/)) disponível no PATH  
+
+---
+## Instalação das dependências
+
+Para facilitar a instalação das bibliotecas Python necessárias, use o arquivo `requirements.txt`:
+
+pip install -r requirements.txt
+
+## Estrutura do projeto
+
+/resources
+├── main.resource
+├── variables.resource
+/tests
+└── form.robot
+/README.md
+/requirements.txt
 
 
+## Como rodar os testes
 
+1. Navegue até a pasta do projeto no terminal.  
+2. Execute um teste específico:  
 
-## Como executar
-1. Instale o Robot Framework e SeleniumLibrary.
-2. Baixe e configure o ChromeDriver (ou outro driver de sua preferência).
-3. Execute os testes com o comando:
+robot --test "Nome do Caso de Teste" tests/popup_test.robot
 
-## Ferramentas utilizadas
-- Robot Framework
-- SeleniumLibrary
-- ChromeDriver
+3. Para rodar todos os tests:
+
+robot --outputdir logs  tests/form.robot
 
 
 
