@@ -21,17 +21,6 @@ Para facilitar a instalação das bibliotecas Python necessárias, use o arquivo
 
 pip install -r requirements.txt
 
-## Estrutura do projeto
-
-/resources
-├── main.resource
-├── variables.resource
-/tests
-└── form.robot
-/README.md
-/requirements.txt
-
-
 ## Como rodar os testes
 
 1. Navegue até a pasta do projeto no terminal.  
