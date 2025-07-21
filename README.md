@@ -26,7 +26,7 @@ pip install -r requirements.txt
 1. Navegue até a pasta do projeto no terminal.  
 2. Execute um teste específico:  
 
-robot --test "Nome do Caso de Teste" tests/popup_test.robot
+robot --test "Nome do Caso de Teste" tests/form.robot
 
 3. Para rodar todos os tests:
 
